@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: beige;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-shadow: 1px 1px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+table > thead > tr > th {
+    background: red;
+    padding: 1rem;
+    border: 1px solid #000;
+    color: #fff;
+    font-weight: bolder;
+}
+
+table > tbody > tr > td {
+    padding: 1rem;
+    border: 1px solid #000;
+    text-align: center;
+    font-weight: 600;
+}
+
+td > img {
+    width: 80px;
+}
+
+tr:nth-child(even) {
+    background: lightblue;
+}
