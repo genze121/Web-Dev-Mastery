@@ -1,0 +1,18 @@
+.navigation{
+    background: red;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.items{
+    float: left;
+}
+
+.items a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0 80px;
+}
