@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th {
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .header {
+            background-color: red;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .row-header {
+            background-color: red;
+            font-weight: 600;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="text-align: center;text-decoration: underline;text-underline-offset: 10px;">HTML Table Colspan &
+            Rowspan</h1>
+
+        <h2 style="text-decoration: underline;text-underline-offset: 10px;">Colspan Example</h2>
+        <table style="width: 100%;">
+            <tr class="header">
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+
+            <tr>
+                <td>Mohan</td>
+                <td>Rathore</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Sohan</td>
+                <td>Das</td>
+                <td>20</td>
+            </tr>
+        </table>
+
+        <h2 style="text-decoration: underline;text-underline-offset: 10px;">Rowspan Example</h2>
+        <table style="width: 100%;">
+            <tr>
+                <th class="row-header">Name</th>
+                <td>Mohan</td>
+            </tr>
+            <tr>
+                <th class="row-header" rowspan="2">Phone Number</th>
+                <td>1234567890</td>
+            </tr>
+            <tr>
+                <td>0987654321</td>
+            </tr>
+        </table>
+
+        <h2 style="text-decoration: underline;text-underline-offset: 10px;">Colgroup Example</h2>
+        <table>
+            <colgroup>
+                <col span="2" style="background-color: yellowgreen;">
+            </colgroup>
+
+            <colgroup>
+            <col span="1">
+            </colgroup>
+            <colgroup>
+                <col span="4" style="background-color: rgb(221, 17, 221);">
+            </colgroup>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
