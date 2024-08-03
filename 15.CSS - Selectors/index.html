@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Selectors</title>
+    <style>
+        /* Element Selector */
+        div {
+            background-color: red;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* class selector */
+        .second-div {
+            background-color: yellowgreen;
+            color: #fff;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        /* id selector */
+        #third-div {
+            background-color: darkblue;
+            color: #fff;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        /* Child Selector */
+        div>p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: #039d95;
+            background-color: purple;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: yellowgreen;
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: violet;
+        }
+
+        p:first-child {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div> Hi, I am a first div.</div>
+
+    <div class="second-div">Hi, I am a second div.</div>
+
+    <div id="third-div">Hi, I am a third div.</div>
+
+    <div class="red">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste deleniti non quia aliquam ducimus. Optio
+            asperiores ad quia aliquid aspernatur.</p>
+    </div>
+
+    <div>
+        <article>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, totam!</p>
+        </article>
+    </div>
+
+    <div>
+        <a href="https://www.google.com">Go to Google</a>
+        <a href="https://www.x.com">Go to Twitter</a>
+    </div>
+</body>
+
+</html>
