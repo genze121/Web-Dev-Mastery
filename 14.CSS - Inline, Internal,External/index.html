@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Implementatio of CSS using inline, internal and external">
+    <title>CSS - Inline, Internal, External</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h3 {
+            color: turquoise;
+            margin-left: 25px;
+        }
+
+        span {
+            color: yellowgreen;
+            margin-left: 25px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .internal-external {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ol>
+            <li style="text-decoration: underline;">Inline CSS Example</li>
+        </ol>
+
+        <h2 style="color: blue;margin-left: 25px;">Hello World !</h2>
+
+        <p style="color: cadetblue;margin-left: 25px;">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.
+            Veritatis omnis aspernatur aliquam, praesentium
+            velit incidunt dicta mollitia voluptate vel. Delectus!</p>
+    </div>
+
+    <div>
+        <ol>
+            <li class="internal-external">Internal CSS Example</li>
+        </ol>
+
+        <h3>Hello World !!</h3>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium error vitae facere consequuntur
+            adipisci aspernatur quidem doloremque temporibus architecto nobis!</span>
+    </div>
+
+    <div>
+        <ol>
+            <li class="internal-external">External CSS Example</li>
+        </ol>
+
+        <h2 class="header">Hello World !!</h2>
+
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt necessitatibus sunt quis. Debitis sapiente,
+            repudiandae quaerat tenetur, repellat nisi nobis ratione illo molestiae vero hic eligendi facere? Culpa,
+            deleniti exercitationem!</p>
+    </div>
+</body>
+
+</html>
