@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Fonts, Colors, Text Properties</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        h1 {
+            font-family: "Poppins", sans-serif;
+        }
+
+        p {
+            font-family: sans-serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 20px;
+            text-decoration: underline;
+            line-height: 2;
+            letter-spacing: 5px;
+        }
+
+        h2 {
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color: blue;
+            text-decoration-style: underline;
+            text-decoration-thickness: 5px;
+            text-indent: 10px;
+            text-align: center;
+        }
+
+        .loremOne {
+            width: 150px;
+            border: 2px solid red;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .loremTwo {
+            width: 300px;
+            border: 2px solid blue;
+            word-break: break-all;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>About Fonts</h2>
+        <p>This is a font.</p>
+        <p class="loremOne">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iste autem ipsum, sit
+            magnam illum quam
+            eligendi eaque facilis ratione exercitationem, fugiat ducimus numquam laudantium asperiores et aspernatur
+            repellendus porro!</p>
+
+        <p class="loremTwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium minima tempora,
+            ipsum
+            exercitationem a suscipit? Molestias nam magni doloribus.</p>
+    </div>
+
+    <div>
+        <a href="colors.html">Go to Colors Page</a>
+    </div>
+</body>
+
+</html>
