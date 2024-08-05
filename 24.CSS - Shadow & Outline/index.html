@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Shadow & Outline</title>
+
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        .box {
+            border: 2px solid red;
+            box-shadow: 0 0 5px 5px #FF0000;
+        }
+
+        .text {
+            text-shadow: 0 2px 3px #FF0000, 0 2px 5px #0000FF;
+        }
+
+        .box1 {
+            outline: 2px solid blue;
+            outline-offset: 10px;
+            padding: 20px;
+            box-shadow: 2px 2px 2px 2px #EE0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Let's see an example of shadow and outline.</h1>
+    </div>
+
+    <div>
+        <p class="text">I am a paragraph.</p>
+    </div>
+
+    <div class="box1">
+        <p>I am a paragraph for outline.</p>
+    </div>
+</body>
+
+</html>
