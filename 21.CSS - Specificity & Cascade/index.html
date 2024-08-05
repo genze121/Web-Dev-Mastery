@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Specificity & Cascade</title>
+    <style>
+        /* Note :- 1) Universal Selector - 0
+        2) Element selector & pseudo-element - 1
+        3) class selector & pseudo-selectors & attribute-selector - 10
+        4) Id selector - 100
+        5) Inline - 1000 */
+
+
+        /* Specificity - 1 */
+        h2 {
+            color: red;
+        }
+
+        /* Specificity - 10 */
+        .yellow {
+            color: yellow;
+        }
+
+        /* Specificity - 10 */
+        .cviolet {
+            color: violet;
+        }
+
+        /* Specificity - 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* Specificity - 1 + 10 = 11 */
+        h2.cviolet {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2 class="yellow cviolet cpurple">CSS Specificity</h2>
+    </div>
+</body>
+
+</html>
