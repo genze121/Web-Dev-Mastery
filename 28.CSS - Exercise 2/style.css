@@ -66,6 +66,19 @@ body {
     margin: auto;
 }
 
-.read-more:hover{
+.read-more:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 90%;
+        margin: 5px 10px 0 20px;
+    }
+
+    .image img {
+        width: 600px;
+        margin: 5px 10px 0 20px;
+        margin: 0 10px 0 5px;
+    }
 }
