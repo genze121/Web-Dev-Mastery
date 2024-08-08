@@ -26,11 +26,11 @@ ul li {
 
 ul li:first-child {
     /* local variable */
-    /* --color: orange;
-    background-color: var(--color); */
+    --color: orange;
+    background-color: var(--color);
 
-    /* Fallback color, when --color variable is not available the we can pass the color directly. */
-    background-color: var(--color, rgb(204, 255, 0));
+    /* Note:- Fallback color, when --color variable is not available then we can pass the color directly. */
+    /* background-color: var(--color, rgb(204, 255, 0)); */
 }
 
 .container {
