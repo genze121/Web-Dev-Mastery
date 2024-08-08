@@ -1,0 +1,39 @@
+/* global variable */
+:root {
+    --primary-color: rgb(0, 255, 60);
+    --secondary-color: rgb(58, 0, 128);
+    --text-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: var(--primary-color);
+}
+
+ul {
+    display: flex;
+    height: 50px;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 5px;
+}
+
+ul li:first-child {
+    /* local variable */
+    /* --color: orange;
+    background-color: var(--color); */
+
+    /* Fallback color, when --color variable is not available the we can pass the color directly. */
+    background-color: var(--color, rgb(204, 255, 0));
+}
+
+.container {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
