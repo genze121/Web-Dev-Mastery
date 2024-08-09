@@ -16,14 +16,33 @@
             body {
                 background-color: red;
             }
+
+            .boxes {
+                width: 200px;
+                height: 200px;
+                background-color: chartreuse;
+                border: 2px solid black;
+            }
+        }
+
+        @media only screen and (orientation:landscape) {
+            body {
+                border: 3px solid violet;
+            }
+        }
+
+        @media only screen and (min-width:600px) {
+            body {
+                background-color: aqua;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div>
-        Hi I am a media query.
-    </div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
 </body>
 
 </html>
