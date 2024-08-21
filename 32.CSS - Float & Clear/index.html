@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Float & Clear</title>
+
+    <style>
+        img {
+            /* image floats to the left */
+            float: left;
+        }
+
+        .cards {
+            border: 1px solid black;
+            display: flow-root;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3) {
+            background-color: aqua;
+            /* using clear the image which is set to float does not float for this nth-child(3) from left and right */
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS - Float & Clear</h1>
+
+    <div class="cards">
+        <img src="https://images.pexels.com/photos/24778766/pexels-photo-24778766/free-photo-of-scenic-view-of-mountains-in-iceland.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Mountains" width="200" height="200">
+        <div class="card">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam distinctio quis placeat
+                aspernatur cum culpa natus sint, aperiam, corrupti architecto eligendi aliquam, quas error doloribus
+                praesentium debitis non quod.</p>
+        </div>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni quisquam at accusamus placeat
+                nihil necessitatibus. Recusandae, delectus architecto ea cumque incidunt voluptatibus at amet eos
+                repellendus suscipit, unde molestiae harum minus vero, labore quibusdam alias dolorem modi voluptas
+                autem nihil corrupti placeat? Itaque beatae nostrum quisquam blanditiis fuga rerum ipsam deserunt sint
+                illo sed! Ex iste optio a accusamus quam impedit ea doloremque repellendus quasi nulla ullam magni
+                voluptatem laboriosam, labore architecto quia? Magni a, laudantium temporibus sint aut minus sequi, id
+                eaque provident, ut ad perspiciatis praesentium. Aperiam, molestiae pariatur est nihil id quo laudantium
+                eligendi sit eaque!</p>
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>
