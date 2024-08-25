@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - More on selectors</title>
+
+    <style>
+        /* .box:first-child {
+            background-color: aqua;
+            color: red;
+            font-weight: 700;
+        } */
+
+        /* .box::first-line {
+            color: blue;
+        } */
+
+        .boxes * {
+            color: blue;
+            border: 2px solid black;
+        }
+
+        [data-color="primary"] {
+            margin-top: 50px;
+            padding: 10px;
+        }
+
+        /* .box:nth-child(odd){
+            background-color: aqua;
+        } */
+
+        /* From last it takes 1st element. */
+        .box:nth-last-child(1) {
+            background-color: blue;
+            color: white;
+        }
+
+        /* pseudo-elements */
+        .boxes::before {
+            content: "Web Dev";
+        }
+
+        .boxes::after {
+            content: "Success";
+            color: red;
+        }
+
+        ::selection {
+            background-color: red;
+            color: black;
+        }
+
+        .box::first-letter {
+            color: rgb(69, 4, 71);
+        }
+
+        input[type="text"]{
+            width: 200px;
+            height: 40px;
+        }
+
+        input::placeholder{
+            color: brown;
+            font-weight: 700;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box" data-color="primary">I am a box 1</div>
+        <div class="box">Box 2 </div>
+        <div class="box">Box 3</div>
+    </div>
+    <input type="text" placeholder="Enter text here...">
+</body>
+
+</html>
